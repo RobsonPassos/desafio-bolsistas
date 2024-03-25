@@ -3,6 +3,7 @@ package com.example.desafiobolsistas.entity;
 import com.example.desafiobolsistas.enums.TipoIdentificador;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -29,9 +30,11 @@ public class Bolsista {
     @Setter
     private String numeroIdentificador;
 
-
     @Getter
     @Setter
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "data_cadastro", updatable = false)
     private Date dataCadastro;
 
     @Getter

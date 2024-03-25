@@ -2,7 +2,6 @@ package com.example.desafiobolsistas.dto;
 
 
 import com.example.desafiobolsistas.entity.Bolsista;
-import com.example.desafiobolsistas.entity.DadosBancarios;
 import com.example.desafiobolsistas.enums.TipoIdentificador;
 import lombok.Getter;
 import lombok.Setter;

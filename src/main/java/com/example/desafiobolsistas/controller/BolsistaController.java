@@ -1,9 +1,7 @@
 package com.example.desafiobolsistas.controller;
 
 import com.example.desafiobolsistas.dto.BolsistaTO;
-import com.example.desafiobolsistas.dto.DadosBancariosTO;
 import com.example.desafiobolsistas.entity.Bolsista;
-import com.example.desafiobolsistas.entity.DadosBancarios;
 import com.example.desafiobolsistas.service.BolsistaService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,21 +25,9 @@ public class BolsistaController {
 
     @PostMapping
     public ResponseEntity<?> createBolsista(@RequestBody BolsistaTO bolsistaTO) {
-//        DadosBancariosTO dadosBancariosTO = bolsistaTO.getDadosBancarios();
-//        if (dadosBancariosTO != null) {
-//            // Salve os dados bancários separadamente
-//            DadosBancarios dadosBancarios = bolsistaService.createDadosBancarios(dadosBancariosTO.build(dadosBancariosTO));
-//            dadosBancariosTO.setId(dadosBancarios.getId());
-//            bolsistaTO.setDadosBancarios(dadosBancariosTO);
-//        }
-
-        // Salve o bolsista
         Bolsista savedBolsista = bolsistaService.createBolsista(bolsistaTO.build(bolsistaTO));
         return new ResponseEntity<>(savedBolsista, HttpStatus.CREATED);
     }
-
-
-
 
     @GetMapping
     public List<Bolsista> getAllBolsistas() {

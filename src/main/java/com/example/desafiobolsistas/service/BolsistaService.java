@@ -1,12 +1,10 @@
 package com.example.desafiobolsistas.service;
 
 
-import com.example.desafiobolsistas.dto.BolsistaTO;
 import com.example.desafiobolsistas.entity.Bolsista;
 import com.example.desafiobolsistas.entity.DadosBancarios;
 import com.example.desafiobolsistas.repository.BolsistaRepository;
 import com.example.desafiobolsistas.repository.DadosBancariosRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

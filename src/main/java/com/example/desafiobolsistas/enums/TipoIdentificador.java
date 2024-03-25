@@ -2,5 +2,5 @@ package com.example.desafiobolsistas.enums;
 
 public enum TipoIdentificador {
 
-    CPF;
+    CPF, CNH, PASSAPORTE;
 }

@@ -1,6 +1,5 @@
 package com.example.desafiobolsistas.dto;
 
-import com.example.desafiobolsistas.entity.Bolsista;
 import com.example.desafiobolsistas.entity.DadosBancarios;
 import lombok.Getter;
 import lombok.Setter;
