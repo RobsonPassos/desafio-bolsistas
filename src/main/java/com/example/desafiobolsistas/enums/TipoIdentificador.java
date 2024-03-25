@@ -1,2 +1,6 @@
-package com.example.desafiobolsistas.enums;public enum TipoIdentificador {
+package com.example.desafiobolsistas.enums;
+
+public enum TipoIdentificador {
+
+    CPF;
 }
